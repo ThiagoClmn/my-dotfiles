@@ -1,0 +1,19 @@
+[user]
+	name = Thiago Calomino
+	email = thcalomino@id.uff.br
+	username = ThiagoClmn
+
+[alias]
+st = status
+cm = commit -m
+br = branch
+df = diff
+lg = log -pgit ps
+co = checkout
+
+rao = remote add origin
+pom = push origin master
+plom = pull origin master
+pl = pull
+[credential]
+	helper = cache
