@@ -1,10 +1,12 @@
 #! /bin/bash
 
+# make sure you run this script as root so you don't sudo all the time
+# my current is an Ubuntu 20.04
 apt update
 apt upgrade -y
-apt install git octave default-jdk build-essential gcc g++ gfortran -y
-apt install vim gimp gparted htop gnome tweaks zsh silversearcher-ag -y
 
+apt install git octave default-jdk build-essential gcc g++ gfortran -y
+apt install vim gimp gparted htop gnome-tweaks zsh silversearcher-ag -y
 
 # Docker
 # get docker public key
