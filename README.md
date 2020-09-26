@@ -1,2 +1,2 @@
 # My dotfiles
-Those are my usual dotfiles in GNU/Linux system
+Those are my usual dotfiles for bash, zsh, vim and git
