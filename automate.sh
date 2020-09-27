@@ -8,7 +8,7 @@ apt upgrade -y
 apt install git octave default-jdk build-essential gcc g++ gfortran -y
 apt install vim gimp gparted htop gnome-tweaks zsh silversearcher-ag -y
 
-# Docker
+# Docker#################
 # get docker public key
 sudo apt-get install \
     apt-transport-https \
@@ -33,3 +33,8 @@ git clone https://github.com/daniruiz/flat-remix
 git clone https://github.com/daniruiz/flat-remix-gtk
 mkdir -p ~/.icons && mkdir -p ~/.themes
 cp -r flat-remix/Flat-Remix* ~/.icons/ && cp -r flat-remix-gtk/Flat-Remix-GTK* ~/.themes/
+
+# .Net Core platform
+# get microsoft keys
+# sdk
+# runtime
