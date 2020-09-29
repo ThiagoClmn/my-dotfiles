@@ -1,8 +1,9 @@
-! Skeleton for f90 files 
+#include <stdio.h>
+#include <stdlib.h>
 
-program main
-  implicit none
-  real*8 ::a
-  a=0d0 
-  write a
-end program
+int main(){
+
+  // code here
+  return 0;
+
+}
