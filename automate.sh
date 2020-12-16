@@ -16,35 +16,36 @@ git clone https://github.com/daniruiz/flat-remix-gtk
 mkdir -p ~/.icons && mkdir -p ~/.themes
 cp -r flat-remix/Flat-Remix* ~/.icons/ && cp -r flat-remix-gtk/Flat-Remix-GTK* ~/.themes/
 
-# Docker################# see if it needs some update
+# Docker
 # get docker public key
-sudo apt-get install \
-    apt-transport-https \
-    ca-certificates \
-    curl \
-    gnupg-agent \
-    software-properties-common
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+#sudo apt-get install \
+#    apt-transport-https \
+#    ca-certificates \
+#    curl \
+#    gnupg-agent \
+#    software-properties-common
+#curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 # docker engine
-sudo add-apt-repository \
-   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
-   $(lsb_release -cs) \
-   stable"
-sudo apt-get install docker-ce docker-ce-cli containerd.io
+#sudo add-apt-repository \
+#   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+#   $(lsb_release -cs) \
+#   stable"
+#sudo apt-get install docker-ce docker-ce-cli containerd.io
 
 # add yourself to docker group
-sudo usermod -aG docker $USER
+#sudo usermod -aG docker $USER
 ##########################
 
 
-
+# Games
+apt install steam lutris -y
+#apt install pcsxr -y
 
 # some other tools to add such as...
 
 # .Net Core platform
 # get microsoft keys
 # sdk and runtime
-
-
-# Games
-apt install steam lutris -y
+# VLC, RStudio, VSCode, Popcorn Time
+# ohmyzsh,gitkraken, discord
+# sublimetxt, intellij, python3-tk python3-pip
