@@ -48,4 +48,4 @@ apt install steam lutris -y
 # sdk and runtime
 # VLC, RStudio, VSCode, Popcorn Time
 # ohmyzsh,gitkraken, discord
-# sublimetxt, intellij, python3-tk python3-pip
+# sublimetxt, intellij, python3-tk python3-pip, rstudio, dbeavor
