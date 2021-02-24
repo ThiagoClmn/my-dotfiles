@@ -1,20 +1,30 @@
 #! /bin/bash
 # file that installs pretty much all i need through apt
 
-
 # make sure you run this script as root so you don't sudo all the time
 # my current OS is an Ubuntu 20.04
+
+# cd /home/[USER]/
 apt update
 apt upgrade -y
 
 apt install git octave default-jdk build-essential gcc g++ maven -y
 apt install vim gimp gparted htop gnome-tweaks zsh silversearcher-ag tmux -y
+apt install wget curl -y
+
+# apt install laptop-mode-tools (for laptop users, to save energy)
 
 # flat remix
 git clone https://github.com/daniruiz/flat-remix
 git clone https://github.com/daniruiz/flat-remix-gtk
 mkdir -p ~/.icons && mkdir -p ~/.themes
 cp -r flat-remix/Flat-Remix* ~/.icons/ && cp -r flat-remix-gtk/Flat-Remix-GTK* ~/.themes/
+
+# archive utilities
+apt install rar unrar p7zip-full p7zip-rar -y
+
+# wine winetricks
+apt install wine winetricks -y
 
 # Docker
 # get docker public key
@@ -38,14 +48,15 @@ cp -r flat-remix/Flat-Remix* ~/.icons/ && cp -r flat-remix-gtk/Flat-Remix-GTK* ~
 
 
 # Games
-apt install steam lutris -y
-#apt install pcsxr -y
+apt install steam lutris pcsxr -y
 
 # some other tools to add such as...
 
 # .Net Core platform
 # get microsoft keys
 # sdk and runtime
+
+
 # VLC, RStudio, VSCode, Popcorn Time
 # ohmyzsh,gitkraken, discord
 # sublimetxt, intellij, python3-tk python3-pip, rstudio, dbeavor
