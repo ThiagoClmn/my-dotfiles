@@ -9,6 +9,7 @@ apt update
 apt upgrade -y
 
 apt install git octave default-jdk build-essential gcc g++ maven -y
+apt install postgresql-12 mysql-server mysql-workbench-community -y
 apt install vim gimp gparted htop gnome-tweaks zsh silversearcher-ag tmux -y
 apt install wget curl -y
 
