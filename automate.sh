@@ -1,17 +1,21 @@
 #! /bin/bash
 # file that installs pretty much all i need through apt
-
-# make sure you run this script as root so you don't sudo all the time
 # my current OS is an Ubuntu 20.04
 
-# cd /home/[USER]/
+# Ru as root at /home/[YOUR_USER]/.
 apt update
 apt upgrade -y
 
 apt install git octave default-jdk build-essential gcc g++ maven -y
+
+# Database utilities
 apt install postgresql-12 mysql-server mysql-workbench-community -y
-apt install vim gimp gparted htop gnome-tweaks zsh silversearcher-ag tmux -y
+
+apt install gimp gparted gnome-tweaks -y
 apt install wget curl -y
+
+# terminal utilities
+apt install vim htop zsh silversearcher-ag tmux -y
 
 # apt install laptop-mode-tools (for laptop users, to save energy)
 
