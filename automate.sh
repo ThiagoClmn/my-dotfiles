@@ -1,8 +1,9 @@
 #! /bin/bash
 # file that installs pretty much all i need through apt
-# my current OS is an Ubuntu 20.04
+# my current OS is an Ubuntu 20.10
 
-# Ru as root at /home/[YOUR_USER]/.
+# Run as root at /home/[YOUR_USER]/.
+
 apt update
 apt upgrade -y
 
@@ -33,33 +34,27 @@ apt install wine winetricks -y
 
 # Docker
 # get docker public key
-#sudo apt-get install \
-#    apt-transport-https \
-#    ca-certificates \
-#    curl \
-#    gnupg-agent \
-#    software-properties-common
-#curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-# docker engine
-#sudo add-apt-repository \
-#   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
-#   $(lsb_release -cs) \
-#   stable"
-#sudo apt-get install docker-ce docker-ce-cli containerd.io
+	# apt install apt-transport-https ca-certificates curl gnupg-agent software-properties-common -y
+	# curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 
-# add yourself to docker group
-#sudo usermod -aG docker $USER
-##########################
+#docker engine
+	#add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+	#apt install docker-ce docker-ce-cli containerd.io
+
+#add yourself to docker group
+	#usermod -aG docker $USER
 
 
 # Games
 apt install steam lutris pcsxr -y
 
-# some other tools to add such as...
+# Installing .Net
 
-# .Net Core platform
-# get microsoft keys
-# sdk and runtime
+wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+dpkg -i packages-microsoft-prod.deb
+apt install apt-transport-https dotnet-sdk-5.0 aspnetcore-runtime-5.0 -y
+apt install -y dotnet-runtime-5.0
+
 
 
 # VLC, RStudio, VSCode, Popcorn Time
