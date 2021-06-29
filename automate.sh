@@ -2,8 +2,8 @@
 # file that installs pretty much all i need through apt
 # my current OS is an Ubuntu 20.10
 
-# Run as root at /home/[YOUR_USER]/.
-
+cd ~
+sudo su
 apt update
 apt upgrade -y
 
