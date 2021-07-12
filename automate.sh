@@ -10,7 +10,8 @@ apt upgrade -y
 apt install git octave default-jdk build-essential gcc g++ maven -y
 
 # Database utilities
-apt install postgresql-12 mysql-server mysql-workbench-community -y
+# apt install postgresql-12 -y
+apt mysql-server mysql-workbench-community -y
 
 apt install gimp gparted gnome-tweaks -y
 apt install wget curl -y
@@ -30,23 +31,27 @@ cp -r flat-remix/Flat-Remix* ~/.icons/ && cp -r flat-remix-gtk/Flat-Remix-GTK* ~
 apt install rar unrar p7zip-full p7zip-rar -y
 
 # wine winetricks
-apt install wine winetricks -y
+# apt install wine winetricks -y
+
+
 
 # Docker
 # get docker public key
-	# apt install apt-transport-https ca-certificates curl gnupg-agent software-properties-common -y
-	# curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+apt install apt-transport-https ca-certificates curl gnupg-agent software-properties-common -y
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 
 #docker engine
-	#add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
-	#apt install docker-ce docker-ce-cli containerd.io
+add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+apt install docker-ce docker-ce-cli containerd.io
 
 #add yourself to docker group
-	#usermod -aG docker $USER
+usermod -aG docker $USER
+
+
 
 
 # Games
-apt install steam lutris pcsxr -y
+apt install steam lutris -y
 
 # Installing .Net
 
@@ -58,5 +63,5 @@ apt install -y dotnet-runtime-5.0
 
 
 # VLC, RStudio, VSCode, Popcorn Time
-# ohmyzsh,gitkraken, discord
+# ohmyzsh,gitkraken, discord, spotify
 # sublimetxt, intellij, python3-tk python3-pip, rstudio, dbeavor
