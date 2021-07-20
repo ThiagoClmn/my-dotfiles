@@ -32,7 +32,7 @@ apt install rar unrar p7zip-full p7zip-rar -y
 
 # wine winetricks
 # apt install wine winetricks -y
-
+# apt install ubuntu-restricted-extras -y
 
 
 # Docker
