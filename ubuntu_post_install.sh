@@ -8,6 +8,8 @@ apt update
 apt upgrade -y
 
 apt install git octave default-jdk build-essential gcc g++ maven -y
+apt install net-tools -y
+# install python3-tk python3-pip
 
 # Database utilities
 # apt install postgresql-12 -y
@@ -33,10 +35,10 @@ apt install rar unrar p7zip-full p7zip-rar -y
 
 # wine winetricks
 # apt install wine winetricks -y
-# apt install ubuntu-restricted-extras -y
+apt install ubuntu-restricted-extras -y
 
 
-# Docker
+# Docker ################################
 # get docker public key
 apt install apt-transport-https ca-certificates curl gnupg-agent software-properties-common -y
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
@@ -47,13 +49,12 @@ apt install docker-ce docker-ce-cli containerd.io
 
 #add yourself to docker group
 usermod -aG docker $USER
-
+################################
 
 # Games
 apt install steam lutris -y
 
 # Installing .Net
-
 #wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 #dpkg -i packages-microsoft-prod.deb
 #apt install apt-transport-https dotnet-sdk-5.0 aspnetcore-runtime-5.0 -y
@@ -61,6 +62,13 @@ apt install steam lutris -y
 
 
 
-# VLC, RStudio, VSCode, Popcorn Time
-# ohmyzsh,gitkraken, discord, spotify
-# sublimetxt, intellij, python3-tk python3-pip
+# VLC
+# RStudio
+# VSCode
+# Popcorn Time
+# ohmyzsh
+# gitkraken
+# discorD
+# spotify
+# sublimetxt
+# intellij
